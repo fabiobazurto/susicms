@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Entry Pages</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Body</th>
+      <th>Published</th>
+      <th>Section</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @entry_pages.each do |entry_page| %>
+      <tr>
+        <td><%= entry_page.title %></td>
+        <td><%= entry_page.body %></td>
+        <td><%= entry_page.published %></td>
+        <td><%= entry_page.section %></td>
+        <td><%= link_to 'Show', entry_page %></td>
+        <td><%= link_to 'Edit', edit_entry_page_path(entry_page) %></td>
+        <td><%= link_to 'Destroy', entry_page, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Entry Page', new_entry_page_path %>

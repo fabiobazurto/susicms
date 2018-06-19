@@ -1,0 +1,143 @@
+// Place all the styles related to the sections controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.navbar{
+  margin-bottom: 0px;
+}
+.navbar-inverse{
+  border-radius: 0px;
+}
+nav.navbar-inverse,.container-fluid{
+  background-color: #e94c3d !important;
+  border-color: #e3665b;
+}
+.navbar-header{
+  margin-left:5px;
+  width:90%;
+}
+.navbar-header a{
+  color: #ffffff;
+}
+#boy, #boddy{
+
+fill:#ed4030;
+
+}
+
+#shield{
+stroke:#9AD738 ;
+}
+
+.navbar-brand{
+  padding-top: 5px;
+}
+.ti-root, .jumbotron{
+  background-color: #e94c3d;
+  color: #ffffff;
+}
+
+section{
+  padding: 120px 0;
+}
+
+#services{
+    background-color: rgb(249,243,238);
+}
+.ti-root{
+  padding-bottom: 80px;
+}
+.services {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.service-card {
+  padding: 2%;
+  flex-grow: 1;
+  flex-basis: 16%;
+
+  display: flex; /* so child elements can use flexbox stuff too! */
+}
+.socialb{
+  width:4%;
+}
+
+.headline{
+  width: 100%;
+font-family: Helvetica Neue LT,Helvetica Neue,Helvetica,Arial,sans-serif;
+font-weight: 700;
+font-size: 6.5rem;
+line-height: 4.5rem;
+letter-spacing: -.025rem;
+text-align:center;
+}
+
+
+/**
+* contact form
+*/
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.xcontainer {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  .navbar-header{
+
+    width:100%;
+  }
+  .navbar-toggle{
+    margin-right: 0px;
+  }
+  navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+
+    background-color: #fff;
+    color: #000;
+
+}
+}
+
+.navbar-inverse .navbar-toggle {
+
+    border-color: #fff;
+
+}
+
+
+
+svg {
+  overflow:visible;
+  float:right;
+}
+
+.baby {
+  width: 50px;
+}

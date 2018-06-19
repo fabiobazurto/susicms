@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Mail Contacts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Question</th>
+      <th>Already read</th>
+      <th>Already answered</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @mail_contacts.each do |mail_contact| %>
+      <tr>
+        <td><%= mail_contact.name %></td>
+        <td><%= mail_contact.email %></td>
+        <td><%= mail_contact.question %></td>
+        <td><%= mail_contact.already_read %></td>
+        <td><%= mail_contact.already_answered %></td>
+        <td><%= link_to 'Show', mail_contact %></td>
+        <td><%= link_to 'Edit', edit_mail_contact_path(mail_contact) %></td>
+        <td><%= link_to 'Destroy', mail_contact, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Mail Contact', new_mail_contact_path %>

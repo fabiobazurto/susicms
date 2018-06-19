@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  logo: MyString
+  headline: MyString
+  address: MyString
+  phone1: MyString
+  phone2: MyString
+  lat: 9.99
+  lng: 9.99
+  active: false
+
+two:
+  name: MyString
+  logo: MyString
+  headline: MyString
+  address: MyString
+  phone1: MyString
+  phone2: MyString
+  lat: 9.99
+  lng: 9.99
+  active: false

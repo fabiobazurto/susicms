@@ -1,0 +1,172 @@
+//Primary color
+$background-color-primary:    #e94c3d;
+$contrast-color-primary:    #e3665b;
+$background-color-secondary:    rgb(249,243,238);
+$background-color-other:    #e94c3d;
+
+//Fonts
+$font-color-header:   #fff;
+$font-color-title:    #333333;
+$font-color-paragraph:#333333;
+
+.navbar{
+  margin-bottom: 0px;
+}
+.navbar-inverse{
+  border-radius: 0px;
+}
+nav.navbar-inverse,.header{
+  background-color: $background-color-primary !important;
+  border-color: $contrast-color-primary;
+}
+.navbar-header{
+  margin-left:5px;
+  width:40%;
+}
+.navbar-header a{
+  color: $font-color-header;
+}
+.navbar-toggle{
+  border:none;
+}
+.navbar-brand{
+  padding-top: 5px;
+}
+.ti-root, .jumbotron{
+  background-color: $background-color-primary;
+  color: $font-color-header;
+}
+
+section{
+  padding: 120px 0;
+}
+
+#services, .c1{
+    background-color: $background-color-secondary;
+}
+.ti-root{
+  padding-bottom: 80px;
+}
+.services {
+  display: flex;
+  flex-wrap: wrap;
+}
+.service-card {
+  padding: 2%;
+  flex-grow: 1;
+  flex-basis: 16%;
+
+  display: flex; /* so child elements can use flexbox stuff too! */
+}
+.socialb{
+  width:4%;
+}
+
+.col-xs-12{
+  padding: 0px;
+}
+
+.headline{
+  width: 100%;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 40px;
+  text-align:left;
+}
+.navbar a{
+  color:#fff;
+}
+.lead{
+  font-family: 'Roboto', sans-serif;
+}
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    border:none;
+}
+/**
+background-color: #e6e6e6;
+color: #595757;
+*/
+/** ROBOTO ANIMATION **/
+#boy, #boddy{
+  fill:#ed4030;
+}
+
+#shield{
+stroke:#fff ;
+}
+#google{
+  fill:#444;
+}
+
+
+/**
+* contact form
+*/
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.xcontainer {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.navbar-inverse .navbar-text {
+    color: #fff !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar-header{
+
+    width:100%;
+  }
+  .navbar-toggle{
+    margin-right: 0px;
+  }
+  navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+
+    background-color: #fff;
+    color: #000;
+
+}
+}
+
+.navbar-inverse .navbar-toggle {
+
+    border-color: #fff;
+
+}
+
+svg {
+  overflow:visible;
+  float:right;
+  background-color:wheat;
+  padding-top: 160px;
+}
+
+.baby {
+  width: 50px;
+}

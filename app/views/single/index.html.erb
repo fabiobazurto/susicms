@@ -1,0 +1,22 @@
+<header  class="ti-root text-white">
+
+  <div class="container-fluid ">
+
+<%=@company.homepage.html_safe%>
+
+  </div>
+</header>
+
+<%@sections.each do|section|%>
+
+
+  <section id="ss-<%=section.id%>" class="c<%=section.id%>">
+    <div class="container-fluid">
+      <%section.entry_pages.each do |pagina|%>
+        <%=pagina.body.html_safe%>
+      <%end%>
+    </div>
+  </section>
+
+
+<%end%>

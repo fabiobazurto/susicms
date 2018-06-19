@@ -1,0 +1,30 @@
+<ul class="nav navbar-nav navbar-right">
+
+  <%@sections.each do |section|%>
+  <li><p class="navbar-text">
+
+    <%if params[:controller].to_s=="single"%>
+      <%=link_to section.name, "#ss-#{section.id}"%>
+    <%end%>
+  </p>
+  </li>
+  <%end%>
+
+
+<%if user_signed_in?%>
+
+  <li><p class="navbar-text"><%=current_user.email%></p>
+  </li>
+  <li><p class="navbar-text"><%=link_to( "Logout",destroy_user_session_path, method: :delete) %></p>
+  </li>
+
+<%else%>
+  <li><p class="navbar-text"><%=link_to( "Already have an account?",new_user_registration_path) %></p>
+  </li>
+  <li><p class="navbar-text"><%=link_to( "Sign in",new_user_session_path) %></p>
+  </li>
+<%end%>
+
+
+
+</ul>

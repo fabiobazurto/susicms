@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @entry_page.title %>
+</p>
+
+<p>
+  <strong>Body:</strong>
+  <%= @entry_page.body %>
+</p>
+
+<p>
+  <strong>Published:</strong>
+  <%= @entry_page.published %>
+</p>
+
+<p>
+  <strong>Section:</strong>
+  <%= @entry_page.section %>
+</p>
+
+<%= link_to 'Edit', edit_entry_page_path(@entry_page) %> |
+<%= link_to 'Back', entry_pages_path %>
